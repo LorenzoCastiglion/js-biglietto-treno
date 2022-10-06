@@ -12,30 +12,41 @@ output prezzo con max due decimali
 let x = prompt('numero km da percorrere');
 let y = prompt('età passeggero');
 
+
 let numKm = parseInt(x);
-
 let age = parseInt(y);
-
 console.log(typeof age);
 
+//calcolatore prezzo
 let ticketPrice = parseFloat(numKm * 0.21).toFixed(2);
 
 console.log(ticketPrice);
 
+
+let finalTicketPrice;
+
+//applicatore sconto
 if(age < 18){
 
-    let finalTicketPrice = parseFloat(ticketPrice * 0.8).toFixed(2);
-    console.log(finalTicketPrice);
+    finalTicketPrice = ticketPrice * 0.8;
+    
 } else if(age > 65){
 
-    let finalTicketPrice = parseFloat(ticketPrice * 0.6).toFixed(2);
-    console.log(finalTicketPrice);
+    finalTicketPrice = ticketPrice * 0.6;
+    
 } else{
 
-    let finalTicketPrice = ticketPrice;
+    finalTicketPrice = ticketPrice;
     console.log(finalTicketPrice);
 };
 
+finalTicketPrice = parseFloat(finalTicketPrice).toFixed(2);
+
+
+
+console.log(finalTicketPrice);
+
+document.getElementById("prezzofinale").innerHTML = finalTicketPrice;
 
 
 
