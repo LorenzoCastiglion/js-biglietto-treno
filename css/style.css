@@ -23,7 +23,7 @@ body{
     max-width: 255px;
     max-height: 86px ;
     top: 50%;
-    left: 52%;
+    left: 50%;
     transform: translate(-50% , 50%);
 }
 
