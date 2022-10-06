@@ -54,3 +54,8 @@ document.getElementById("prezzofinale").innerHTML = finalTicketPrice;
 
 
 
+
+
+
+
+
