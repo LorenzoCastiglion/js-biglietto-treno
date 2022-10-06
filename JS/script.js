@@ -18,9 +18,13 @@ let age = parseInt(y);
 console.log(typeof age);
 
 //calcolatore prezzo
-let ticketPrice = parseFloat(numKm * 0.21).toFixed(2);
+const ticketPrice = parseFloat(numKm * 0.21).toFixed(2);
 
 console.log(ticketPrice);
+
+if(isNaN(x) || isNaN(y)){
+    alert('NuMeRi!1!1!!11!1')
+}
 
 
 let finalTicketPrice;

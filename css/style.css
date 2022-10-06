@@ -5,6 +5,8 @@
 }
 
 body{
+    background-image: url('../img/5.jpg') ;
+    background-size: contain;
     font-family: 'PT Mono', monospace; 
     
 }
@@ -18,11 +20,11 @@ body{
 }
 
 .prezzo{
+    max-width: 255px;
+    max-height: 86px ;
     top: 50%;
-    left: 50%;
+    left: 52%;
     transform: translate(-50% , 50%);
-    
-    
 }
 
 
